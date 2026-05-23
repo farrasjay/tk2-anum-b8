@@ -1,0 +1,10 @@
+Cara menjalankan di Octave/MATLAB:
+1. Letakkan semua file .m pada folder yang sama.
+2. Buka Octave/MATLAB pada folder tersebut.
+3. Jalankan Bagian4.m untuk verifikasi fungsi Lagrange, gradien, dan Hessian.
+4. Jalankan Bagian5.m untuk eksperimen Newton Method dan Conjugate Gradient Method.
+
+Catatan metode:
+- Newton Method menyelesaikan sistem KKT grad L(h,lambda) = 0.
+- Conjugate Gradient Method tidak meminimalkan L secara langsung karena L(h,lambda) bersifat saddle/linear terhadap lambda. Karena itu, CG diterapkan pada merit function Phi(h,lambda) = 1/2 ||grad L(h,lambda)||_2^2.
+- Kriteria berhenti kedua metode sama: ||grad L(h,lambda)||_2 < 1e-8.
